@@ -16,7 +16,6 @@ class YaUploader:
         headers = self.get_headers()
         params = {'path': file_path, 'overwrite': 'True'}
         response = requests.get(url=upload_url, headers=headers, params=params)
-        pprint(response.json())
         return response.json()
 
     def upload(self, file_path):
@@ -27,7 +26,7 @@ class YaUploader:
             print("Файл успешно загружен")
 
 if __name__ == '__main__':
-    uploader = YaUploader('AQAAAAAVUMzsAADLW07-JJToAEgZjpwrFv4C5NU')
+    uploader = YaUploader('')
     result = uploader.upload('test.txt')
 
     
