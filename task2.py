@@ -27,7 +27,7 @@ class YaUploader:
                 print("Файл успешно загружен")
 
 if __name__ == '__main__':
-    uploader = YaUploader('AQAAAAAVUMzsAADLW07-JJToAEgZjpwrFv4C5NU')
+    uploader = YaUploader('')
     result = uploader.upload('C:\Web-разработка\Нетология\some_text.txt')
 
     
